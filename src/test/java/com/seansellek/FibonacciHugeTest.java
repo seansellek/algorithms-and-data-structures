@@ -14,4 +14,16 @@ public class FibonacciHugeTest
             }
         }
     }
+
+    @Test
+    public void pisanoTest() {
+        assertEquals(FibonacciHuge.pisano(2), 3);
+        assertEquals(FibonacciHuge.pisano(3), 8);
+        assertEquals(FibonacciHuge.pisano(4), 6);
+        assertEquals(FibonacciHuge.pisano(5), 20);
+        assertEquals(FibonacciHuge.pisano(17), 36);
+        assertEquals(FibonacciHuge.pisano(62), 30);
+        assertEquals(FibonacciHuge.pisano(75), 200);
+        assertEquals(FibonacciHuge.pisano(125), 500);
+    }
 }
